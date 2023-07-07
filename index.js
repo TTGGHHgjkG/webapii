@@ -4,9 +4,9 @@ const express = require('express'),
    logger = require('morgan')
 const index = require('./routes/index'),
    api = require('./routes/api')
-const PORT = process.env.PORT || 80
+const PORT = process.env.PORT || 8080 || 5000 || 3000
 
-global.creator = 'xinzuo - whatsapp bot'
+global.creator = '@xinzuo | web-api'
 global.status = {
    query: {
       creator: global.creator,
@@ -21,7 +21,7 @@ global.status = {
    invalidURL: {
       creator: global.creator,
       status: false,
-      msg: 'URL lu salah!'
+      msg: 'URL is wrong!'
    },
    error: {
       status: false,
