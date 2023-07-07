@@ -4,7 +4,7 @@ const express = require('express'),
    logger = require('morgan')
 const index = require('./routes/index'),
    api = require('./routes/api')
-const PORT = process.env.PORT || 8080 || 5000 || 3000
+const PORT = process.env.PORT || 3000
 
 global.creator = '@xinzuo | web-api'
 global.status = {
